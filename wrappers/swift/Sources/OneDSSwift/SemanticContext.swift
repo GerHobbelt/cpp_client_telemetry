@@ -3,6 +3,8 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+import ObjCModule
+
 /// Wrapper over `ODWSemanticContext` class that manages the inclusion of semantic context values on logged events.
 public class SemanticContext {
     private var odwSemanticContext: ODWSemanticContext
@@ -81,7 +83,7 @@ public class SemanticContext {
         - userAdvertisingID: A `String` that contains the unique user advertising identifier.
     */
     public func setUserAdvertisingID(_ userAdvertisingID: String) {
-        odwSemanticContext.setUserAdvertisingId(userAdvertixingID)
+        odwSemanticContext.setUserAdvertisingId(userAdvertisingID)
     }
 
     /**
