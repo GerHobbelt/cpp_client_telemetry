@@ -32,7 +32,31 @@ public final class SanitizerInitConfig {
             odwSanitizerInitConfig.setWarningsToSanitization = newValue
         }
     }
-    
+
+    /// (OPTIONAL) When true, warnings are inserted at the problem location.
+    /// When false (default), warnings are prepended to the beginning of the string.
+    /// Default value is `false`.
+    public var insertWarningAtProblemLocation: Bool {
+        get {
+            odwSanitizerInitConfig.insertWarningAtProblemLocation
+        }
+        set {
+            odwSanitizerInitConfig.insertWarningAtProblemLocation = newValue
+        }
+    }
+
+    /// (OPTIONAL) When true, IsSitePath and IsSitePathLoose checks are bypassed.
+    /// Site paths will not be flagged or sanitized.
+    /// Default value is `false` (site path checks are active).
+    public var bypassSitePathChecks: Bool {
+        get {
+            odwSanitizerInitConfig.bypassSitePathChecks
+        }
+        set {
+            odwSanitizerInitConfig.bypassSitePathChecks = newValue
+        }
+    }
+
     /**
     Returns the Obj-C object of the wrapper.
 

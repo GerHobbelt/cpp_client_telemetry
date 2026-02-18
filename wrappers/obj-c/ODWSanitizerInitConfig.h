@@ -26,6 +26,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(readwrite, nonatomic) NSUInteger sendConcernLimit;
 
+/*!
+ @brief (OPTIONAL) When YES, warning messages are inserted at the problem location.
+        When NO (default), warnings are prepended to the beginning of the string.
+        Default value is `NO`.
+ */
+@property(readwrite, nonatomic) BOOL insertWarningAtProblemLocation;
+
+/*!
+ @brief (OPTIONAL) When YES, IsSitePath and IsSitePathLoose checks are bypassed.
+        Site paths will not be flagged or sanitized.
+        Default value is `NO` (site path checks are active).
+ */
+@property(readwrite, nonatomic) BOOL bypassSitePathChecks;
+
 // Initializer
 - (instancetype)init;
 
