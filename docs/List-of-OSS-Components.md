@@ -6,7 +6,7 @@ These are the Open Source components used by Microsoft 1DS / C++ Client Telemetr
 
 ZLIB DATA COMPRESSION LIBRARY.
 
-SDK maintains its own snapshot of the mainline ZLib with some Intel architecture performance optimizations [here](../zlib). 
+SDK maintains its own snapshot of the mainline ZLib [here](../zlib).
 It is the responsibility of product teams to ensure that a snapshot of zlib they use meets their product security and licensing requirements.
 
 ## [SQLite](https://www.sqlite.org/index.html)
@@ -22,7 +22,7 @@ The SDK provides an option to use a secure version of the traditional `memset` f
 
 JSON for Modern C++.
 
-SDK maintains its own snapshot of the mainline `nlohmann/json` header-only library [here](../lib/include/mat/json.hpp).
+SDK maintains its own snapshot of the mainline `nlohmann/json` header-only library [here](../nlohmann/json.hpp).
 
 ## [libcurl](https://curl.haxx.se/libcurl/)
 
